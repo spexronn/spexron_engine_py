@@ -1,6 +1,6 @@
-# SPEXRON ENGINE v2.0
+# SPEXRON ENGINE 
 
-Windows platformu için geliştirilmiş, yüksek performanslı ve modern arayüze sahip 64-bit bellek tarama ve manipülasyon motorudur. Düşük seviyeli Windows API çağrıları ile doğrudan sistem süreçlerinin bellek uzayına müdahale edebilen bu araç; veri analizi, tersine mühendislik ve yazılım hata ayıklama süreçleri için tasarlanmıştır.
+Windows platformu için geliştirilmiş, yüksek performanslı ve modern arayüze sahip 64-bit bellek tarama ve manipülasyon motorudur. Düşük seviyeli Windows API çağrıları ile doğrudan sistem süreçlerinin belleğe müdahale edebilen bu araç; veri analizi, tersine mühendislik ve yazılım hata ayıklama süreçleri için tasarlanmıştır.
 
 ---
 
@@ -35,7 +35,7 @@ Projenin başlatılması son derece basittir. Python veya bağımlılıkların s
 
 ---
 
-## 🧠 Teknik Detaylar ve Güvenlik
+##  Teknik Detaylar ve Güvenlik
 
 * **Direct OS Calls:** Bellek tarama işlemleri Python'ın `ctypes` kütüphanesi üzerinden doğrudan `kernel32.dll` çağrıları (Windows API) kullanılarak gerçekleştirilir.
 * **Güvenli Yazma:** Yazma işlemleri sırasında bellek koruma bayrakları (`VirtualProtectEx`) geçici olarak yazılabilir hale getirilir (`PAGE_EXECUTE_READWRITE`) ve işlem tamamlandığında orijinal durumuna geri döndürülerek çökme veya yetki hatalarının önüne geçilir.
